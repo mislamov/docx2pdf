@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  xmlsigner:
+    build: .
+    ports:
+    - 8080:8080
+    command: ["java","-jar","/usr/app/docx2pdf.jar"]
